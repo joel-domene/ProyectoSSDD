@@ -267,4 +267,4 @@ Proyecto desarrollado en equipo de 4 personas.
 
 ## Licencia
 
-Distribuido bajo licencia **Apache 2.0**. Consulta [`LICENSE`](LICENSE) para más información.
+Distribuido bajo licencia **MIT**. Consulta [`LICENSE`](LICENSE) para más información.
