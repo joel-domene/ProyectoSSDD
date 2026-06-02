@@ -21,7 +21,7 @@ PCBuilderShop es una tienda online especializada en componentes de hardware. Ofr
 
 La aplicación expone **simultáneamente una interfaz web (HTML generado en servidor con Thymeleaf) y una API REST**, de modo que la misma funcionalidad es accesible tanto desde el navegador como desde clientes externos. El sistema está dividido en **dos microservicios** (aplicación principal y servicio de utilidades) que se comunican por REST, y se despliega de forma reproducible mediante Docker Compose.
 
-> **Contexto:** proyecto académico desarrollado **en equipo de 4 personas** para la asignatura Sistemas Distribuidos (URJC, curso 2025/26), en tres entregas incrementales: maquetación → web dinámica en servidor → API REST, microservicios y despliegue.
+> **Contexto:** proyecto académico desarrollado **en equipo de 4 personas** para la asignatura Sistemas Distribuidos (URJC), en tres entregas incrementales: maquetación → web dinámica en servidor → API REST, microservicios y despliegue.
 
 -----
 
@@ -174,8 +174,8 @@ La API implementa los mismos roles que la web (mediante JWT), de modo que una SP
 ### Opción A — Local (solo app-service)
 
 ```bash
-git clone https://github.com/joel-domene/ProyectoSSDD.git
-cd ProyectoSSDD
+git clone https://github.com/joel-domene/PCBuilderShop-web.git
+cd PCBuilderShop-web
 
 # Crear la base de datos en MySQL
 # CREATE DATABASE pc_builder_db;
@@ -191,8 +191,8 @@ La aplicación quedará disponible en `https://localhost:8443`.
 ### Opción B — Docker Compose (sistema completo)
 
 ```bash
-git clone https://github.com/joel-domene/ProyectoSSDD.git
-cd ProyectoSSDD
+git clone https://github.com/joel-domene/PCBuilderShop-web.git
+cd PCBuilderShop-web
 
 docker compose up -d --build
 docker ps   # deberían aparecer: db, app-service, utility-service
@@ -254,19 +254,14 @@ docker compose -f oci://docker.io/<usuario-dockerhub>/pcbuildershop-compose up
 ├── docker-compose.yml    # Orquestación multicontenedor
 ├── README.md
 ├── ARCHITECTURE.md
-└── LICENSE               # Apache 2.0
+└── LICENSE              
 ```
 
 -----
 
 ## Equipo
 
-Proyecto desarrollado en equipo de 4 personas:
-
-- David Díaz Gómez-Escalonilla
-- Jonay Sebastián Ortiz Armas
-- Ramiro Daniel Flores Aquino
-- Joel Domené Álvaro · [GitHub](https://github.com/joel-domene)
+Proyecto desarrollado en equipo de 4 personas.
 
 -----
 
